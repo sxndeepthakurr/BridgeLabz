@@ -24,9 +24,9 @@ public class Assign{
 
 
         //Q5 Volume of a cylinder
-        int radius=sc.nextInt();
+        int radius1=sc.nextInt();
         int height=sc.nextInt();
-        double vol=Math.PI*radius*radius*height;
+        double vol=Math.PI*radius*radius1*height;
 
         System.out.println("Volume of a Cylinder ="+ vol);
 
