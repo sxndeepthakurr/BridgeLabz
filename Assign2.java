@@ -11,8 +11,8 @@ public class Assign2 {
         }
     }        
     public static void main(String args[]){
-        Car car2=new Car("xyww",2025);
-        Car car1=new Car("xyww",8);
+        Car car2=new Car("Toyota",2025);
+        Car car1=new Car("Creta",2024);
         car1.displayDetails();
         car2.displayDetails();
     }
