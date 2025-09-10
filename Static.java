@@ -35,7 +35,7 @@ class BankAccount {
     }
 }
 
-public class Main {
+public class Static {
     public static void main(String[] args) {
         BankAccount a1 = new BankAccount(101, "Amit");
         BankAccount a2 = new BankAccount(102, "Riya");
