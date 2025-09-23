@@ -1,0 +1,48 @@
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        // int st=0;
+        // int end=nums.length-1;
+        // int idx=0;
+        // if(nums[end]<target){
+        //     return end+1;
+        // }
+        // while(st<end){
+        //     int mid=st+(end-st)/2;
+        //     if(nums[mid]==target){
+        //         return mid;
+        //     }
+        //     if(nums[mid]<target){
+        //         st=mid+1;
+        //     }else{
+        //         end=mid-1;
+        //     }
+        //     st++;
+        //     end--;
+
+        // }
+        // return mid;
+        if(nums[0]>target){
+            return 0;
+        }
+        if(nums[0]==target){
+            return 0;
+        }
+        if(nums.length==1&&nums[0]<target){
+            return 1;
+        }
+        if(nums.length>=2){
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==target){
+                return i;
+            }
+            if(nums[i]>target&&nums[i-1]<target){
+                return i;
+            }
+        }
+        }
+        if(nums[nums.length-1]<target){
+            return nums.length;
+        }
+        return -1;
+    }
+}
